@@ -57,6 +57,7 @@ DSL意味着他可以像橡皮泥或者积木一样被组合或者塑造成为�
 > RISC-V wasn't even on the shopping list of alternatives, but the more Esperanto's engineers looked at it, the more they realized it was more than a toy or just a teaching tool. “We assumed that RISC-V would probably lose 30% to 40% in compiler efficiency [versus Arm or MIPS or SPARC] because it’s so simple,” says Ditzel. “But our compiler guys benchmarked it, and darned if it wasn't within 1%.”
 > 
 > “RISC-V最开始甚至不在我们可考虑范围之内，但是我们Esperanto的工程师越深入的了解它，就越发现RISC-V不仅仅是个玩具或者教学用的工具。我们还假定说RISC-V在编译器效率上相比Arm/MIPS/SPARC会损失30%到40%左右，因为它实在是太简单了。但我们的编译器工程师对他进行了评测，发现只损失了可恨的不到1%。”Ditzel如是说
+
 基于这几个事实我得出的推论就是，当我能够更快的评估我的硬件时，我就能更快的改进它，也就是能比别人更早的靠近不断变化中的有效边界。
 
 ### Chisel的未来
