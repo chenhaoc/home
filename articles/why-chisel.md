@@ -1,5 +1,7 @@
 ## Berkeley的RISC-V开源项目为什么选用Chisel？
 
+作者：郭雄飞
+
 事实胜于雄辩，让我们先跳过过程看下结果吧。
 
 - SiFive作为Berkeley孵化出的高科技公司，几乎所有的研发均使用chisel
@@ -122,3 +124,13 @@ Chisel仍然是一门不断发展和进化中的项目，一个重要的节点�
 所以，当你和我抱怨chisel是scala写的，我不会scala的时候，看我的大白眼！
 
 ![看我的大白眼](/assets/images/articles/call-dabaiyan.jpg)
+
+----
+
+以下是广告时间，2018年6月30日上海会有一场关于RISC-V的研讨会 **RISC-V Day 2018 Shanghai**，也是本年度大陆地区唯一官方举办的研讨会，欢迎来一起聊聊RISC-V或者Chisel。**参会者会有纪念T恤和神秘纪念品，绝对值回票价。**（早鸟票6月17日截止）。
+
+- 会议议程见： [https://riscv.org/2018/06/risc-v-day-in-shanghai/](https://riscv.org/2018/06/risc-v-day-in-shanghai/)
+- 注册网址：[https://tmt.knect365.com/risc-v-day-shanghai/](https://tmt.knect365.com/risc-v-day-shanghai/)
+- 在校学生还可以申请参会和差旅资助：[https://cnrv.io/articles/risc-v-day-2018-shanghai-student-sponorship](https://cnrv.io/articles/risc-v-day-2018-shanghai-student-sponorship)。
+
+![RISC-V Day 2018 Shanghai](/assets/images/bi-weekly-rpts/2018-06-08/riscv-day-shanghai.png)
