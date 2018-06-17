@@ -26,42 +26,7 @@ Scala是由洛桑联邦理工学院的*Martin Odersky* **精心设计**的一门
 
 DSL意味着他可以像橡皮泥或者积木一样被组合或者塑造成为新的语言，一个经典的案例就是把**Scala捏成BASIC语言**。(Github Repo: [https://github.com/fogus/baysick](https://github.com/fogus/baysick))
 
-```scala
-  object Lunar extends Baysick {
-      def main(args:Array[String]) = {
-        10 PRINT "Welcome to Baysick Lunar Lander v0.0.1"
-        20 LET ('dist := 100)
-        30 LET ('v := 1)
-        40 LET ('fuel := 1000)
-        50 LET ('mass := 1000)
-    
-        60 PRINT "You are a in control of a lunar lander."
-        70 PRINT "You are drifting towards the surface of the moon."
-        80 PRINT "Each turn you must decide how much fuel to burn."
-        90 PRINT "To accelerate enter a positive number, to decelerate a negative"
-    
-        100 PRINT "Distance " % 'dist % "km, " % "Velocity " % 'v % "km/s, " % "Fuel " % 'fuel
-        110 INPUT 'burn
-        120 IF ABS('burn) <= 'fuel THEN 150
-        130 PRINT "You don't have that much fuel"
-        140 GOTO 100
-        150 LET ('v := 'v + 'burn * 10 / ('fuel + 'mass))
-        160 LET ('fuel := 'fuel - ABS('burn))
-        170 LET ('dist := 'dist - 'v)
-        180 IF 'dist > 0 THEN 100
-        190 PRINT "You have hit the surface"
-        200 IF 'v < 3 THEN 240
-        210 PRINT "Hit surface too fast (" % 'v % ")km/s"
-        220 PRINT "You Crashed!"
-        230 GOTO 250
-        240 PRINT "Well done"
-    
-        250 END
-    
-        RUN
-      }
-    }
-```
+![Baysick](/assets/images/articles/scala-baysick.png)
 
 看到了么，因为Scala中几乎所有的元素都是对象，并且都能够被赋予新的功能，同时配合大量的语法糖，所以这个无聊的小哥用它来实现了一门新的语言，而且只用了300行。（Code: [https://git.io/vhMmO](https://github.com/fogus/baysick/blob/master/src/main/scala/fogus/baysick/Baysick.scala))
 
